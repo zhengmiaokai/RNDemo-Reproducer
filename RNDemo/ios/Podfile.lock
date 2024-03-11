@@ -1,4 +1,19 @@
 PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
   - boost (1.83.0)
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
@@ -1112,10 +1127,10 @@ PODS:
     - React-logger (= 0.73.2)
     - React-perflogger (= 0.73.2)
   - SocketRocket (0.6.1)
-  - WeexSDK (0.30.0)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
+  - AFNetworking (~> 4.0.1)
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
@@ -1188,11 +1203,11 @@ DEPENDENCIES:
   - React-runtimescheduler (from `../node_modules/react-native/ReactCommon/react/renderer/runtimescheduler`)
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-  - WeexSDK (~> 0.30.0)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   https://gitee.com/mirrors/CocoaPods-Specs.git:
+    - AFNetworking
     - CocoaAsyncSocket
     - Flipper
     - Flipper-Boost-iOSX
@@ -1206,7 +1221,6 @@ SPEC REPOS:
     - libevent
     - OpenSSL-Universal
     - SocketRocket
-    - WeexSDK
 
 EXTERNAL SOURCES:
   boost:
@@ -1308,6 +1322,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   boost: d3f49c53809116a5d38da093a8aa78bf551aed09
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: fea03f2699887d960129cc54bba7e52542b6f953
@@ -1368,9 +1383,8 @@ SPEC CHECKSUMS:
   React-utils: f5bc61e7ea3325c0732ae2d755f4441940163b85
   ReactCommon: 45b5d4f784e869c44a6f5a8fad5b114ca8f78c53
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
-  WeexSDK: f1506760b5efc61cd4ce53540de8321a5b3e48bd
   Yoga: e64aa65de36c0832d04e8c7bd614396c77a80047
 
-PODFILE CHECKSUM: 7bd7e3bf6acd16e6143de498676264b857d0ee7d
+PODFILE CHECKSUM: cbb70072c01acc0af0f5410c8e50dfe8f3c18652
 
 COCOAPODS: 1.11.3

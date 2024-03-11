@@ -30,8 +30,8 @@ target 'RNDemo' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-#  pod 'AFNetworking', '~> 4.0.1'
-  pod 'WeexSDK', '~> 0.30.0'
+  pod 'AFNetworking', '~> 4.0.1'
+#  pod 'WeexSDK', '~> 0.30.0'
   
   post_install do |installer|
     react_native_post_install(
